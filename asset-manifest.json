@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/pokemon/static/css/main.ebe05cc7.css",
+    "main.js": "/pokemon/static/js/main.051a000b.js",
+    "static/js/787.28cb0dcd.chunk.js": "/pokemon/static/js/787.28cb0dcd.chunk.js",
+    "static/media/hoenn-2.png": "/pokemon/static/media/hoenn-2.cc4717997a7959786a9e.png",
+    "static/media/pokemon-background.jpg": "/pokemon/static/media/pokemon-background.00c1c46a7fd2244ca480.jpg",
+    "static/media/pokeball-open.wav": "/pokemon/static/media/pokeball-open.71f99fcfcc90b9746388.wav",
+    "static/media/pokemon-run.wav": "/pokemon/static/media/pokemon-run.ec488341539954fb0571.wav",
+    "static/media/pokeball-throw.wav": "/pokemon/static/media/pokeball-throw.ffbe8fd76c8396674cf4.wav",
+    "static/media/pokedex-open.wav": "/pokemon/static/media/pokedex-open.0f17c666142e40af998f.wav",
+    "static/media/pokedex.png": "/pokemon/static/media/pokedex.b892b6333e9fe7be7b0e.png",
+    "static/media/201831.png": "/pokemon/static/media/201831.a61733ea8c7de9319b5e.png",
+    "static/media/pokeball-confirmed.wav": "/pokemon/static/media/pokeball-confirmed.4888efb3be7c403534a8.wav",
+    "static/media/pokeball-shake.wav": "/pokemon/static/media/pokeball-shake.9ac27c6ee91b2644152a.wav",
+    "static/media/grass-map.png": "/pokemon/static/media/grass-map.02a564d4d62e675ebd9a.png",
+    "static/media/pokeball-shake.gif": "/pokemon/static/media/pokeball-shake.8035cea8db88217ad74c.gif",
+    "static/media/pokemon_pixel_font.woff": "/pokemon/static/media/pokemon_pixel_font.62a855fa4fd1811c3373.woff",
+    "index.html": "/pokemon/index.html",
+    "main.ebe05cc7.css.map": "/pokemon/static/css/main.ebe05cc7.css.map",
+    "main.051a000b.js.map": "/pokemon/static/js/main.051a000b.js.map",
+    "787.28cb0dcd.chunk.js.map": "/pokemon/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ebe05cc7.css",
+    "static/js/main.051a000b.js"
+  ]
+}
