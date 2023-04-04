@@ -1,38 +1,152 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: pixelPokemon;
+  src: url("content/pokemon_pixel_font.woff");
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  margin: 0%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.login-background-image {
+  display:flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  margin:auto;
+  height: 100vh;
+  background-image: url("content/pokemon-background.jpg");
+  background-repeat:no-repeat;
+  background-size:cover;
 }
 
-.App-link {
-  color: #61dafb;
+.register-background-image {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin:auto;
+  height: 100vh;
+  background-image: url("content/pokemon-background.jpg");
+  background-repeat:no-repeat;
+  background-size:cover;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.login-background-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #09c28f;
+  width: 400px;
+  height: 500px;
+}
+
+.login-background-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #01979b;
+  width: 390px;
+  height: 490px;
+
+}
+
+.login-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #ecf1ec;
+  width: 365px;
+  height: 465px;
+  font-family: pixelPokemon;
+  color:#2c3132
+}
+
+.login-text {
+  font-size: 60px;
+  padding-top: 75px;
+}
+
+.login-text:hover {
+  cursor:default;
+}
+
+.username-form {
+  font-family: pixelPokemon;
+  font-size: 30px;
+  margin: 10px;
+  background-color: #d1e0d1;
+}
+
+.password-form {
+  font-family: pixelPokemon;
+  font-size: 30px;
+  margin:10px;
+  background-color: #d1e0d1;
+}
+
+.login-button {
+  margin: 10px;
+  font-family: pixelPokemon;
+  font-size: 30px;
+  width: 233px;
+  background-color: #09c28f;
+  color: #ecf1ec;
+  border: solid #01979b 2px;;
+}
+
+.login-button:hover {
+  cursor: pointer;
+}
+
+.register {
+  margin:0%;
+  margin-bottom: 5px;
+  font-size: 25px;
+  color:#2c3132
+}
+
+.register:link {
+  text-decoration: none;
+}
+
+.use-as-a-guest {
+  margin:0%;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  background-color: transparent;
+  border: none;
+  font-size:25px;
+  font-family: pixelPokemon;
+  color:#2c3132
+
+}
+.work-text {
+  padding-top: 10px;
+  font-size: 25px;;
+}
+
+#work {
+  margin:0%;
+  margin-bottom: 10px;
+  background-color: transparent;
+  border: none;
+  font-size:25px;
+  font-family: pixelPokemon;
+  color:#2c3132
+}
+#work:hover {
+  cursor: pointer;
+}
+
+.use-as-a-guest:hover {
+  cursor: pointer;
+}
+
+.exists {
+  color: red;
+  font-size: 25px;
+}
+
+#login-comment {
+  font-family:'Times New Roman', Times, serif;
+  color: grey;
+  font-size: 12px
 }
