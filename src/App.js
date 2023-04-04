@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import {createBrowserRouter, createRoutesFromElements, Route, Outlet, RouterProvider} from 'react-router-dom'
+import {createHashRouter, createRoutesFromElements, Route, Outlet, RouterProvider} from 'react-router-dom'
 import './App.css';
 import Axios from "axios";
 import {Login} from './Login.jsx'
@@ -8,7 +8,7 @@ import {Game} from './Game.jsx'
 
 function App() {
 
-  const router = createBrowserRouter (
+  const router = createHashRouter (
     createRoutesFromElements(
       <Route path="/" element={<Root/>}>
         <Route index element ={<Login />} />
@@ -17,7 +17,6 @@ function App() {
       </Route>
     )
   )
-  router.basename="/pokemon"
 
   return (
     <div>
