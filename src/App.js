@@ -17,10 +17,11 @@ function App() {
       </Route>
     )
   )
+  router.basename="/pokemon"
 
   return (
     <div>
-      <RouterProvider basename="/pokemon" router = {router}/>
+      <RouterProvider router = {router}/>
     </div>
   );
 }
