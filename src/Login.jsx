@@ -2,7 +2,6 @@ import React, {useEffect, useState} from "react";
 import './App.css';
 import Axios from "axios";
 import {Link, useNavigate} from 'react-router-dom'
-import {useCookies} from 'react-cookie'
 
 export const Login = () => {
 
@@ -17,12 +16,10 @@ export const Login = () => {
 
     const [showWork, setShowWork] = useState(false)
 
-  const [cookies, setCookie] = useCookies(['name']);
 
     useEffect(() => {
 
       if (loggedIn == true) {
-        setCookie('name', username, {path: '/'})
         navigate("/game", {
           state: {
             username : username,
@@ -38,11 +35,6 @@ export const Login = () => {
         })
       }
     }, [loggedIn, loggedInGuest])
-
-    useEffect(() => {
-      document.getElementById("username-value").value = cookies.name
-      setUsermail(cookies.name)
-    }, [])
 
     const login = (e) => {
       if (username == "") {setError("Please enter a username."); return}

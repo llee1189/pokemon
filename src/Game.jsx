@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import './Game.css';
 import { Pokemon, WildMusic, CheckMirageIsland, CheckLocation, RandomPokemon, getDescription} from "./Pokemon.js"
-import {useCookies} from 'react-cookie'
 
 
 import Axios from "axios";
@@ -14,7 +13,6 @@ export const Game = () => {
     const navigate = useNavigate()
     const log = useLocation();
 
-    const [cookies, setCookie] = useCookies(['musicVolume', 'soundVolume']);
     const [isGuest, setIsGuest] = useState(false);
     const [musicVolume, setMusicVolume] = useState(.5);
     const [soundVolume, setSoundVolume] = useState(.5);
