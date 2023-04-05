@@ -68,7 +68,7 @@ export const Login = () => {
               <div className="work-text">All pokemon sprites and cries are pulled in as an outside source, taking away the need to download each individually.</div>
               <div className="work-text">For the Pokedex, when a player first sees a pokemon, that interaction is then logged through MySQL and is reflected through the pokedex by pulling through MySQL as well. Checking if the player has caught the pokemon is done through a similar process.</div>
               <div className="work-text">MySQL is ran on a free-tier of AWS RDS and the Node server is ran for free on Render as well. Due to the free tier constraints, the requests made are much slower than when I ran locally unfortunately, so if certain things seem a little slow, that is the explanation.</div>
-              <div className="work-text">I believe a solution for the above would be to use proper async/await systems which I plan doing for future projects.</div>
+              <div className="work-text">I believe a solution for the above would be to use proper async/await systems which I plan on doing for future projects.</div>
               <br/>
               <input type="button" id="work" onClick={() => { setShowWork(false)}} value="Back to Login Page"></input>
 
