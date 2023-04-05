@@ -47,7 +47,7 @@ export const Login = () => {
     const login = (e) => {
       if (username == "") {setError("Please enter a username."); return}
 
-      Axios.post("http://localhost:3001/login", {
+      Axios.post("https://pokemon-server-zzdv.onrender.com/login", {
         username: username,
       }).then((response) => {
         if (response.data == "BAD") {

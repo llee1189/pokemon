@@ -42,7 +42,7 @@ export const Game = () => {
     const [pokedexCaught, setPokedexCaught] = useState(false)
 
     const checkCaughtPokemon = (p) => {
-            Axios.post("http://localhost:3001/check-caught-pokemon", {
+            Axios.post("https://pokemon-server-zzdv.onrender.com/check-caught-pokemon", {
                 username: username,
                 pokemon: p
               }).then((response) => {
@@ -58,7 +58,7 @@ export const Game = () => {
     }
 
     const registerCaughtPokemon = (p) => {
-        Axios.post("http://localhost:3001/caught-pokemon", {
+        Axios.post("https://pokemon-server-zzdv.onrender.com/caught-pokemon", {
             username: username,
             pokemon: p
           }).then((response) => {
@@ -67,7 +67,7 @@ export const Game = () => {
     }
 
     const seenEncounterPokemon = (p, id) => {
-        Axios.post("http://localhost:3001/seen-pokemon", {
+        Axios.post("https://pokemon-server-zzdv.onrender.com/seen-pokemon", {
             username: username,
             pokemon: p
           }).then((response) => {
@@ -80,7 +80,7 @@ export const Game = () => {
     }
 
     const seenPokedexPokemon = (p) => {
-        Axios.post("http://localhost:3001/seen-pokemon", {
+        Axios.post("https://pokemon-server-zzdv.onrender.com/seen-pokemon", {
             username: username,
             pokemon: p
           }).then((response) => {
@@ -93,7 +93,7 @@ export const Game = () => {
     }
 
     const dbPokemon = (e) => {
-        Axios.post("http://localhost:3001/db-pokemon", {
+        Axios.post("https://pokemon-server-zzdv.onrender.com/db-pokemon", {
           username: username,
           pokemon: e
         }).then((response) => {

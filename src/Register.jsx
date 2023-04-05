@@ -32,7 +32,7 @@ export const Register = () => {
         // if (password =="" ) {setError("Please enter a password."); return}
 
 
-        Axios.post("http://localhost:3001/register", {
+        Axios.post("https://pokemon-server-zzdv.onrender.com/register", {
           username: username,
         }).then((response) => {
             if (response.data == "BAD") {
