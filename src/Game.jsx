@@ -9,6 +9,7 @@ import ReactAudioPlayer from 'react-audio-player';
 
 
 export const Game = () => {
+
     const timeFlash = 200;
     const navigate = useNavigate()
     const log = useLocation();
@@ -85,7 +86,9 @@ export const Game = () => {
             if (response.data == "SEEN") {
                 document.getElementById(p + "-id").className = "pokedex-pokemon"
             } else if (response.data == "NOT SEEN") {
-                document.getElementById(p + "-id").className = "pokedex-pokemon-undiscovered"
+                if (document.getElementById(p + "-id") != null) {
+                    document.getElementById(p + "-id").className = "pokedex-pokemon-undiscovered"
+                }
             }
         })
     }

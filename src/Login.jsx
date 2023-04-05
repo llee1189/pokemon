@@ -63,13 +63,13 @@ export const Login = () => {
               <h1 style={{fontWeight: "normal"}}>How's The Code Work? And then some...</h1>
               <div className="work-text">A mini-game based off the 3rd generational Pokemon game set in Hoenn.</div>
               <div className="work-text">This site uses React.js with 'react-router-dom' and MySQL using Axios, CORS, and Express.</div>
-              <div className="work-text">The login and register page are a basic SQL SELECT and INSERT.</div>
               <div className="work-text">The game uses a background image of Hoenn's landscape with buttons overlayed and acting as routes. The pokemons in each area is based off the original spawn rates in the game.</div>
               <div className="work-text">The wild encounter process is done through timeouts and CSS transitions.</div>
               <div className="work-text">All pokemon sprites and cries are pulled in as an outside source, taking away the need to download each individually.</div>
               <div className="work-text">For the Pokedex, when a player first sees a pokemon, that interaction is then logged through MySQL and is reflected through the pokedex by pulling through MySQL as well. Checking if the player has caught the pokemon is done through a similar process.</div>
               <div className="work-text">MySQL is ran on a free-tier of AWS RDS and the Node server is ran for free on Render as well. Due to the free tier constraints, the requests made are much slower than when I ran locally unfortunately, so if certain things seem a little slow, that is the explanation.</div>
-              <br/><br/><br/>
+              <div className="work-text">I believe a solution for the above would be to use proper async/await systems which I plan doing for future projects.</div>
+              <br/>
               <input type="button" id="work" onClick={() => { setShowWork(false)}} value="Back to Login Page"></input>
 
               </div>

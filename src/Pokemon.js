@@ -1902,7 +1902,6 @@ export function getDescription(poke) {
 }
 
 export function admin() {
-
     let pokedex = [
         "treecko",
         "grovyle",
@@ -2107,14 +2106,13 @@ export function admin() {
         "jirachi",
         "deoxys"]
         pokedex.forEach(x => 
-            Axios.post("http://localhost:3001/seen-pokemon", {
+            Axios.post("https://pokemon-server-zzdv.onrender.com/seen-pokemon", {
                 username: "admin",
                 pokemon: x
               }).then((response) => {
-    
+                console.log('pepelaugh')
+
             })
             )
         
-
-
 }
