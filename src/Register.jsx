@@ -5,9 +5,8 @@ import {Link, useNavigate} from 'react-router-dom'
 
 
 export const Register = () => {
-  
+   
     const navigate = useNavigate()
-    const [password ,setPassword] = useState("");
     const [username ,setUsername] = useState("");
     const [error, setError] = useState("");
 
@@ -27,7 +26,7 @@ export const Register = () => {
 
     const register = (e) => {
         e.preventDefault();
-        // if (username == "" && password == "") {setError("Please enter a username and password."); return}
+        // if (username == "" && password == "") {setError("Please enter a username and password."); return}w
         if (username == "") {setError("Please enter a username."); return}
         // if (password =="" ) {setError("Please enter a password."); return}
 
