@@ -30,7 +30,7 @@ export const Register = () => {
         if (username == "") {setError("Please enter a username."); return}
         // if (password =="" ) {setError("Please enter a password."); return}
 
-
+        alert("If you're visiting the site for the first time in a while, please wait for a few seconds for the server to respond. Unfortunately the perks of a free service.")
         Axios.post("https://pokemon-server-zzdv.onrender.com/register", {
           username: username,
         }).then((response) => {
